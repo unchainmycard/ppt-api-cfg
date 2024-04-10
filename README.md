@@ -1,2 +1,2 @@
-# usa-api-cfg
+# csa-api-cfg
 consum'act api config repository
