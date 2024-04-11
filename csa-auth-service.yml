@@ -10,7 +10,7 @@ spring:
   jackson:
     date-format: "YYYY-MM-dd"
     serialization:
-      write-dates-as-timestamps: true
+      WRITE_DATES_AS_TIMESTAMPS: true
       default-property-inclusion: NON_NULL
 
 jwt:
