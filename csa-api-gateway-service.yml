@@ -10,6 +10,13 @@ spring:
             allowedHeaders: "*"
             allowedMethods: "*"
             allowCredentials: true
+      routes:
+        - id: auth-service
+          uri: lb://csa-auth-service
+          predicates:
+            - Path=/auth/api/v1/**
+          filters:
+            - RewritePath=/auth/(?<path>.*), /$\{path}
 
 server:
   port: 8080
