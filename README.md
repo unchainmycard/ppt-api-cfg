@@ -1,2 +1,2 @@
-# csa-api-cfg
-consum'act api config repository
+# ppt-api-cfg
+PricePatrol api config repository
