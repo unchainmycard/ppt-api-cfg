@@ -18,6 +18,8 @@ jwt:
   # secret-key: jeanvaljean with c@ramel hash text
   # from this site https://www.devglan.com/online-tools/hmac-sha256-online
   secret-key: 1a0a6b99a89af68d186f8aff153e4d3257170fd2b37f81f9786b80748b116a13
+  expiration-time: 600   # 10 minutes
+  auth-header: Authorization
 
 server:
   port: 26002
