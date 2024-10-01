@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: ppt-user-service
+  data:
+    mongodb:
+      host: ${MONGO_SERVER_IP:127.0.0.1}
+      port: ${MONGO_SERVER_PORT:27017}
+      database: ppt_auth
+  jackson:
+    date-format: "YYYY-MM-dd"
+    time-zone: Europe/Paris
+    locale: fr_FR
+    serialization:
+      write_dates_as_timestamps: true
+    default-property-inclusion: NON_NULL
+
+jwt:
+  # secret-key: jeanvaljean with c@ramel hash text
+  # from this site https://www.devglan.com/online-tools/hmac-sha256-online
+  secret-key: 1a0a6b99a89af68d186f8aff153e4d3257170fd2b37f81f9786b80748b116a13
+
+server:
+  port: 26002
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+
+logging:
+  level:
+    root: DEBUG
