@@ -1,11 +1,11 @@
 spring:
   application:
-    name: csa-auth-service
+    name: ppt-auth-service
   data:
     mongodb:
       host: ${MONGO_SERVER_IP:127.0.0.1}
       port: ${MONGO_SERVER_PORT:27017}
-      database: csa_auth
+      database: ppt_auth
       auto-index-creation: true
   jackson:
     date-format: "YYYY-MM-dd"
