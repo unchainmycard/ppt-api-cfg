@@ -17,6 +17,12 @@ spring:
             - Path=/auth/api/v1/**
           filters:
             - RewritePath=/auth/(?<path>.*), /$\{path}
+        - id: user-service
+          uri: lb://ppt-user-service
+          predicates:
+            - Path=/user/api/v1/**
+          filters:
+            - RewritePath=/user/(?<path>.*), /$\{path}
 
 server:
   port: 8080
